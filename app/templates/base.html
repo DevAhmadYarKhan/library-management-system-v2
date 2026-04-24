@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h3>Library Management System</h3>
+            <ul class="nav-links">
+                <li>Dashboard</li>
+                <li>Books</li>
+                <li>Members</li>
+                <li>Borrowings</li>
+                <li>Issue Book</li>
+                <li>Logout</li> <!--Should obviously be dynamic, but hardcoded for now-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
