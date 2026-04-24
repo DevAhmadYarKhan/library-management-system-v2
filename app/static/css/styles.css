@@ -9,6 +9,11 @@ body {
     padding: 1rem;
 }
 
+/*STYLES FOR FORM ERRORS*/
+.form-error {
+    color: red;
+}
+
 /*STYLES FOR NAVIGATION BAR*/
 .navbar {
     display: flex;
