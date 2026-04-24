@@ -1,0 +1,26 @@
+/*STYLES FOR ALL ELEMENTS*/
+*{
+    box-sizing: border-box;
+}
+
+/*STYLES FOR CREATING WHITESPACE ON THE PAGE ITSELF*/
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+/*STYLES FOR NAVIGATION BAR*/
+.navbar {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    padding: 0 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-left: auto;
+    list-style: none;
+}
