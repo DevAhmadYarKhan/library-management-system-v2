@@ -2,6 +2,9 @@
 
 {% block content %}
     <h1>Log In</h1>
+    <!--We use post instead of get because using get adds the form fields to the
+    url, cluttering the address bar, whereas with post the form data is submitted
+    in the body of the request-->
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
