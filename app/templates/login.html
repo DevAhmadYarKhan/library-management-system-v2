@@ -6,6 +6,9 @@
     url, cluttering the address bar, whereas with post the form data is submitted
     in the body of the request-->
     <form action="" method="post" novalidate>
+        <!--The following line of code generates a hidden field that includes a token
+        that is used to protect the form against CSRF attacks. The SECRET_KEY
+        variable needs to be defined in the Flask configuration for this to work-->
         {{ form.hidden_tag() }}
         <p>
             {{ form.username.label }}<br>
