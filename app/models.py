@@ -19,3 +19,15 @@ class Member(db.Model):
 
     def __repr__(self):
         return '<Member {}>'.format(self.email)
+    
+class Book(db.Model):
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    title: so.Mapped[str] = so.mapped_column(sa.String(64), index=True)
+    author: so.Mapped[str] = so.mapped_column(sa.String(64), index=True)
+    total_copies: so.Mapped[int] = so.mapped_column()
+    available_copies: so.Mapped[int] = so.mapped_column()
+
+    __table_args__ = (sa.UniqueConstraint('title', 'author', name='unique_book_title_author'),)
+
+    def __repr__(self):
+        return '<Book {} by {}>'.format(self.title, self.author)
